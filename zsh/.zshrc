@@ -13,6 +13,9 @@ antigen bundle command-not-found
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
+# Custom zsh configuration
+antigen bundle $HOME/.zsh
+
 # Load the theme.
 antigen theme agnoster
 
