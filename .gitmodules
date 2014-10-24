@@ -1,3 +1,6 @@
 [submodule "zsh/.antigen"]
 	path = zsh/.antigen
 	url = https://github.com/zsh-users/antigen.git
+[submodule "emacs/.cask"]
+	path = emacs/.cask
+	url = https://github.com/cask/cask.git

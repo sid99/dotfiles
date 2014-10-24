@@ -1,0 +1,8 @@
+(source "gnu" "http://elpa.gnu.org/packages/")
+(source "melpa" "http://melpa.milkbox.net/packages/")
+(source "marmalade" "http://marmalade-repo.org/packages/")
+
+(depends-on "cask")
+(depends-on "elpy")
+(depends-on "magit")
+(depends-on "color-theme-solarized")
