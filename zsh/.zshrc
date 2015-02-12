@@ -9,6 +9,7 @@ antigen bundle brew
 antigen bundle common-aliases
 antigen bundle docker
 antigen bundle git
+antigen bundle kennethreitz/autoenv
 antigen bundle lein
 antigen bundle pip
 antigen bundle tmux
