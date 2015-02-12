@@ -9,3 +9,4 @@ export EDITOR="emacsclient -t"
 
 # Emacs aliases
 alias e="emacsclient -t"
+alias ekill="emacsclient -e '(kill-emacs)'"
