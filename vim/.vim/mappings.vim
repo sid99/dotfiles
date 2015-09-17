@@ -18,7 +18,6 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
-inoremap jj <Esc>
 map <silent> <Leader>q :cclose<CR>
 
 set pastetoggle=<F2>  " Fast paste toggling
@@ -26,3 +25,9 @@ nmap <Leader>e :exec '!'.getline('.')
 
 " Buffers
 nmap <silent> <Leader>q :bd<CR>
+
+" Select the text that has been just pasted
+nmap <silent> gp `[v`]
+
+" Execute SQL paragraph
+nmap <Leader>x Vap\se

@@ -69,3 +69,13 @@ augroup BgHighlight
     autocmd WinEnter * set cul
     autocmd WinLeave * set nocul
 augroup END
+
+" Set current buffer name as screen title
+autocmd BufEnter * let &titlestring = hostname() . "[vim(" . expand("%:t") . ")]"
+set title
+
+" Set defaults for Vagrantfile
+autocmd BufRead,BufNewFile Vagrantfile set ft=ruby
+
+" Loads ctrlp faster and makes it respect .gitignore file
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
