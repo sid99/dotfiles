@@ -1,0 +1,15 @@
+[user]
+	name = Nithesh Mittapally
+	email = nithesh.chandra@gmail.com
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/nithesh/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.4/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	up = "!git remote update -p; git merge --ff-only @{u}"
