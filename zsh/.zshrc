@@ -4,10 +4,12 @@ source $HOME/.antigen/antigen.zsh
 antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle autojump
 antigen bundle brew
 antigen bundle common-aliases
 antigen bundle docker
 antigen bundle git
+antigen bundle jsontools
 antigen bundle lein
 antigen bundle pip
 antigen bundle tmux
