@@ -31,12 +31,14 @@ Plugin 'rking/ag.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'burnettk/vim-angular'
 Plugin 'dbext.vim'
+Plugin 'Valloric/YouCompleteMe'
 
 " Python plugins
 Plugin 'klen/python-mode'
 let g:pymode_rope_lookup_project = 1
 let g:pymode_folding = 0
 let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope_completion = 0
 " let g:pymode_rope = 0
 " autocmd BufWritePost *.py call Flake8()
 Plugin 'mattn/emmet-vim'

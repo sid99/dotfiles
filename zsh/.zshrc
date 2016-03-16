@@ -25,7 +25,7 @@ antigen bundle nithesh/use_env
 antigen bundle kennethreitz/autoenv
 
 # Load the theme.
-DEFAULT_USER=nithesh
+DEFAULT_USER=sidharthad
 antigen theme agnoster
 
 # Tell antigen that you're done.

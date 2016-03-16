@@ -62,7 +62,7 @@ set splitright  "Open new windows to the right
 
 source $HOME/.vim/mappings.vim
 
-let g:netrw_list_hide=netrw_gitignore#Hide().'.*\.swp$'
+" let g:netrw_list_hide=netrw_gitignore#Hide().'.*\.swp$'
 
 augroup BgHighlight
     autocmd!
@@ -79,3 +79,8 @@ autocmd BufRead,BufNewFile Vagrantfile set ft=ruby
 
 " Loads ctrlp faster and makes it respect .gitignore file
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+" As it is not recommended to use auto completion of pymode and YouComplateMe
+" at the same time, use the following to command to cancel the pymode
+" completion totally.
+let g:pymode_rope_completion = 0
