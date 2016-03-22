@@ -42,6 +42,9 @@ set incsearch  " Show search results while-you-type
 set ignorecase " Searches are case insensitive...
 set smartcase  " ... unless they contain at least one capital letter
 
+" Clear highlights on hitting ESC twice
+nnoremap <esc><esc> :noh<return>
+
 " Indentation settings
 " filetype indent on
 set autoindent
