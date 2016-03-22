@@ -33,6 +33,9 @@ set number            " Show current line number
 autocmd InsertEnter * silent! :set norelativenumber
 autocmd InsertLeave,BufNewFile,VimEnter * silent! :set relativenumber
 
+" copying to system clipboard
+set clipboard=unnamed
+
 " Search settings
 set hlsearch   " Highlights search results
 set incsearch  " Show search results while-you-type
@@ -40,6 +43,7 @@ set ignorecase " Searches are case insensitive...
 set smartcase  " ... unless they contain at least one capital letter
 
 " Indentation settings
+" filetype indent on
 set autoindent
 set smartindent
 set shiftwidth=4
@@ -47,6 +51,8 @@ set tabstop=4
 set expandtab
 set smarttab
 set backspace+=start,eol,indent
+
+au BufRead,BufNewFile *.ejs set filetype=html
 
 " Whitespace settings
 set list       " Show whitespace characters
@@ -84,3 +90,4 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 " at the same time, use the following to command to cancel the pymode
 " completion totally.
 let g:pymode_rope_completion = 0
+let g:pymode_virtualenv = 0
