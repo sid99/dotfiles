@@ -30,3 +30,4 @@ antigen theme agnoster
 
 # Tell antigen that you're done.
 antigen apply
+alias tls="tmux ls"
